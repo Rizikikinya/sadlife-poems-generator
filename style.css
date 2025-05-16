@@ -40,9 +40,10 @@ form {
   box-shadow: 0 0 5px #333;
 }
 #sad-poem-submit {
-  border-radius: 15px;
+  border-radius: 15px 20px;
   background-color: hsla(358, 10%, 52%, 0.8);
   border-color: none;
+  padding: 20px;
 }
 #sad-poem-result {
   padding: 20px;
@@ -51,7 +52,10 @@ form {
   font-family: "Tagesschrift", system-ui;
   text-align: center;
   border-radius: 15px;
-  background-color: #d4c6c627;
+  background-color: #d4c6c642;
+}
+#sad-poem-result strong {
+  color: lab(49.1% 58.57 35.03 / 0.39);
 }
 footer {
   font-size: 14px;
