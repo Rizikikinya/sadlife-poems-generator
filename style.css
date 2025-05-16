@@ -11,11 +11,6 @@ body {
   border-radius: 15px;
 }
 
-header {
-  position: sticky;
-  top: 0;
-}
-
 h1 {
   text-align: center;
   font-style: italic;
@@ -26,9 +21,10 @@ h1 {
 
   font-variation-settings: "wdth" 100;
 }
-form {
+#sad-poem-form {
   padding: 40px;
   display: flex;
+  position: relative;
 
   background-color: #d4c6c615;
   border-radius: 15px;
@@ -72,10 +68,22 @@ form {
 }
 .instructions {
   font-size: 14px;
-  color: #e0d6c8;
-  padding: 20px;
+  color: black;
   display: none;
+
+  position: absolute;
+  bottom: -0.1%;
+  left: 40%;
+  transform: translateX(-50%);
+  opacity: 0.5;
+
+  transition: opacity 0.3s ease-in-out, bottom 0.3s ease-in-out;
 }
+
+#sad-poem-search:hover ~ .instructions {
+  display: block;
+}
+
 #sad-poem-result strong {
   color: rgb(153, 120, 100);
 }
@@ -89,9 +97,6 @@ footer {
   display: none;
 }
 
-h1:hover + .instructions {
-  display: block;
-}
 a {
   color: #907778;
 }
