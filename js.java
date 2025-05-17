@@ -16,10 +16,20 @@ function generateSadPoem(event){
 }
 let form = document.getElementById("sad-poem-form");
 form.addEventListener("submit", generateSadPoem);
+ unction generatePoem(response){
+  
+  let poemElement = document.getElementById("sad-poem-result");
+  new Typewriter('#sad-poem-result', {
+  strings: response.data.answer,
+  autoStart: true,
+});
 
+    
+  
+}
 
     
   
 
-//default poem
+
 
