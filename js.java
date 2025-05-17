@@ -16,7 +16,7 @@ function generateSadPoem(event){
 }
 let form = document.getElementById("sad-poem-form");
 form.addEventListener("submit", generateSadPoem);
- unction generatePoem(response){
+ function generatePoem(response){
   
   let poemElement = document.getElementById("sad-poem-result");
   new Typewriter('#sad-poem-result', {
